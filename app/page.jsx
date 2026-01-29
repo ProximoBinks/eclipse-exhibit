@@ -12,7 +12,7 @@ export default function Page() {
                 <div className="flex items-center justify-between gap-4">
                     <div className="flex items-center gap-3">
                         <div className="h-12 w-12 overflow-hidden rounded-full border border-black/10 bg-white shadow-sm">
-                            <Image src="/images/eclipse-logo.jpg" alt="Eclipse Exhibit logo" width={48} height={48} />
+                            <Image src="/apple-touch-icon.png" alt="Eclipse Exhibit logo" width={48} height={48} />
                         </div>
                         <div>
                             <p className="text-xs uppercase tracking-[0.3em] text-muted">Eclipse Exhibit</p>

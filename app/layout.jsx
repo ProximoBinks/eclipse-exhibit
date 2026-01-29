@@ -13,6 +13,11 @@ export const metadata = {
         type: 'website',
         images: ['/images/eclipse-logo.jpg']
     },
+    appleWebApp: {
+        capable: true,
+        statusBarStyle: 'black-translucent',
+        title: 'Eclipse Exhibit'
+    },
     twitter: {
         card: 'summary_large_image',
         title: 'Eclipse Exhibit',
@@ -34,6 +39,9 @@ export default function RootLayout({ children }) {
                 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+                <meta name="apple-mobile-web-app-title" content="Eclipse Exhibit" />
             </head>
             <body className="min-h-screen antialiased bg-paper text-ink">
                 <div className="min-h-screen px-5 sm:px-10">

@@ -9,14 +9,21 @@ export default function Page() {
                     <span>Paris • Culture</span>
                     <span>Issue No. 118</span>
                 </div>
-                <div className="flex items-center justify-between gap-4">
-                    <div className="flex items-center gap-3">
-                        <div className="h-12 w-12 overflow-hidden rounded-full border border-black/10 bg-white shadow-sm">
-                            <Image src="/apple-touch-icon.png" alt="Eclipse Exhibit logo" width={48} height={48} />
+                <div className="flex items-center justify-between gap-6">
+                    <div className="flex items-center gap-4">
+                        <div className="h-12 w-12 overflow-hidden rounded-full border border-white/15 bg-black shadow-[0_0_30px_rgba(30,76,255,0.2)]">
+                            <Image src="/images/eclipse-logo-icon.png" alt="Eclipse Exhibit icon" width={48} height={48} />
                         </div>
-                        <div>
-                            <p className="text-xs uppercase tracking-[0.3em] text-muted">Eclipse Exhibit</p>
-                            <h1 className="font-display text-2xl text-black sm:text-3xl">Art News & Modern Culture</h1>
+                        <div className="space-y-2">
+                            <Image
+                                src="/images/eclipse-logo-text.png"
+                                alt="Eclipse Exhibit"
+                                width={240}
+                                height={64}
+                                className="h-6 w-auto sm:h-7"
+                                priority
+                            />
+                            <p className="text-xs uppercase tracking-[0.35em] text-muted">Art News & Modern Culture</p>
                         </div>
                     </div>
                     <nav className="hidden items-center gap-6 text-xs uppercase tracking-[0.2em] text-muted md:flex">
@@ -37,16 +44,16 @@ export default function Page() {
                         </a>
                     </nav>
                 </div>
-                <div className="waterline" />
+                <div className="waterline opacity-60" />
             </header>
 
             <section className="space-y-6">
                 <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em] text-muted">
-                    <span className="rounded-full border border-black/10 px-3 py-1">Modern Masters</span>
+                    <span className="rounded-full border border-white/15 px-3 py-1">Modern Masters</span>
                     <span>Feature</span>
                 </div>
                 <div className="space-y-4">
-                    <h2 className="font-display text-4xl leading-tight text-black sm:text-5xl">
+                    <h2 className="font-display text-4xl leading-tight text-white sm:text-5xl">
                         Ferruccio&apos;s &apos;Stargazing&apos; to Headline the Louvre&apos;s Modern Masters Collection
                     </h2>
                     <p className="max-w-3xl text-lg text-muted sm:text-xl">
@@ -56,18 +63,18 @@ export default function Page() {
                 </div>
                 <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-muted">
                     <div className="flex items-center gap-3">
-                        <span className="text-black">Thien Ong</span>
-                        <span className="h-1 w-1 rounded-full bg-black/30" />
+                        <span className="text-white">Thien Ong</span>
+                        <span className="h-1 w-1 rounded-full bg-white/30" />
                         <span>Paris Bureau</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <button className="rounded-full border border-black/10 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
+                        <button className="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
                             Share
                         </button>
-                        <button className="rounded-full border border-black/10 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
+                        <button className="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
                             Tweet
                         </button>
-                        <button className="rounded-full border border-black/10 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
+                        <button className="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
                             Copy Link
                         </button>
                     </div>
@@ -76,7 +83,7 @@ export default function Page() {
 
             <section className="space-y-6">
                 <figure className="space-y-3">
-                    <div className="overflow-hidden rounded-2xl border border-black/10 shadow-sm">
+                    <div className="overflow-hidden rounded-2xl border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.65)]">
                         <Image
                             src="/images/eclipse-cover-1.jpg"
                             alt="Ferruccio's painting Stargazing"
@@ -91,9 +98,9 @@ export default function Page() {
                     </figcaption>
                 </figure>
 
-                <article className="space-y-6 text-base leading-relaxed text-black/90 sm:text-lg">
+                <article className="space-y-6 text-base leading-relaxed text-white/90 sm:text-lg">
                     <p>
-                        <span className="float-left mr-3 mt-2 font-display text-5xl text-black">T</span>
+                        <span className="float-left mr-3 mt-2 font-display text-5xl text-white">T</span>
                         his extraordinary painting, a celestial dreamscape infused with an array of midnight blues and
                         ethereal light, promises to captivate audiences and critics alike. It is set to headline the
                         Louvre&apos;s prestigious Modern Masters collection, which serves as a grand celebration of the
@@ -109,7 +116,7 @@ export default function Page() {
                         experience it.
                     </p>
                     <p>Ferruccio himself, known for his humility and introspective nature, remained grounded when asked about the inspiration behind Stargazing.</p>
-                    <blockquote className="border-l-2 border-accent pl-4 text-xl italic text-black sm:text-2xl">
+                    <blockquote className="border-l-2 border-accent pl-4 text-xl italic text-white sm:text-2xl">
                         “I simply paint what I see.”
                     </blockquote>
                     <p>
@@ -129,7 +136,7 @@ export default function Page() {
 
             <section className="space-y-6">
                 <figure className="space-y-3">
-                    <div className="overflow-hidden rounded-2xl border border-black/10 shadow-sm">
+                    <div className="overflow-hidden rounded-2xl border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.65)]">
                         <Image
                             src="/images/eclipse-cover-2.jpg"
                             alt="Ferruccio at the Shooting Star awards ceremony"
@@ -142,7 +149,7 @@ export default function Page() {
                         Ferruccio (right) with fellow artist Benzo (left) at the 2024 Shooting Star awards ceremony
                     </figcaption>
                 </figure>
-                <article className="space-y-6 text-base leading-relaxed text-black/90 sm:text-lg">
+                <article className="space-y-6 text-base leading-relaxed text-white/90 sm:text-lg">
                     <p>
                         As Stargazing cements his place in art history, we take a moment to look back at another
                         luminous moment in his career: the Shooting Star awards ceremony, an event that celebrated
@@ -163,9 +170,9 @@ export default function Page() {
                 </article>
             </section>
 
-            <section className="space-y-6 border-t border-black/10 pt-10">
+            <section className="space-y-6 border-t border-white/10 pt-10">
                 <div className="flex items-center justify-between">
-                    <h3 className="font-display text-2xl text-black">Related Stories</h3>
+                    <h3 className="font-display text-2xl text-white">Related Stories</h3>
                     <button className="text-xs uppercase tracking-[0.2em] text-muted hover:text-accent">
                         View All
                     </button>
@@ -188,31 +195,34 @@ export default function Page() {
                             tag: 'Essay'
                         }
                     ].map((item) => (
-                        <div key={item.title} className="rounded-2xl border border-black/10 bg-white/80 p-5 shadow-sm">
+                        <div
+                            key={item.title}
+                            className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
+                        >
                             <p className="text-xs uppercase tracking-[0.2em] text-muted">
                                 {item.category} • {item.tag}
                             </p>
-                            <h4 className="mt-3 font-display text-lg text-black">{item.title}</h4>
+                            <h4 className="mt-3 font-display text-lg text-white">{item.title}</h4>
                             <button className="mt-6 text-xs uppercase tracking-[0.2em] text-accent">Read</button>
                         </div>
                     ))}
                 </div>
             </section>
 
-            <footer className="space-y-6 border-t border-black/10 pt-10 text-sm text-muted">
+            <footer className="space-y-6 border-t border-white/10 pt-10 text-sm text-muted">
                 <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                         <p className="text-xs uppercase tracking-[0.3em]">Eclipse Exhibit</p>
-                        <p className="font-display text-2xl text-black">Where art meets the infinite.</p>
+                        <p className="font-display text-2xl text-white">Where art meets the infinite.</p>
                     </div>
                     <div className="flex flex-wrap gap-3">
-                        <button className="rounded-full border border-black/10 px-4 py-2 text-xs uppercase tracking-[0.2em] hover:border-accent hover:text-accent">
+                        <button className="rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.2em] hover:border-accent hover:text-accent">
                             Subscribe
                         </button>
-                        <button className="rounded-full border border-black/10 px-4 py-2 text-xs uppercase tracking-[0.2em] hover:border-accent hover:text-accent">
+                        <button className="rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.2em] hover:border-accent hover:text-accent">
                             Newsletter
                         </button>
-                        <button className="rounded-full border border-black/10 px-4 py-2 text-xs uppercase tracking-[0.2em] hover:border-accent hover:text-accent">
+                        <button className="rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.2em] hover:border-accent hover:text-accent">
                             Contact
                         </button>
                     </div>

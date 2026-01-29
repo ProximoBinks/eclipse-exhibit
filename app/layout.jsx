@@ -3,13 +3,15 @@ import '../styles/globals.css';
 export const metadata = {
     title: {
         template: '%s | Eclipse Exhibit',
-        default: 'Eclipse Exhibit'
+        default: "Ferruccio's 'Stargazing' to Headline the Louvre's Modern Masters Collection | Eclipse Exhibit"
     },
-    description: 'Prestigious art news and contemporary culture coverage.',
+    description:
+        "The art world is once again ablaze with admiration as Ferruccio unveils his breathtaking new work, Stargazing, a piece already being hailed as a generation-defining masterpiece.",
     metadataBase: new URL('https://eclipse-exhibit.netlify.app'),
     openGraph: {
-        title: "Eclipse Exhibit",
-        description: 'Prestigious art news and contemporary culture coverage.',
+        title: "Ferruccio's 'Stargazing' to Headline the Louvre's Modern Masters Collection",
+        description:
+            "The art world is once again ablaze with admiration as Ferruccio unveils his breathtaking new work, Stargazing, a piece already being hailed as a generation-defining masterpiece.",
         type: 'website',
         images: ['/images/eclipse-logo.jpg']
     },
@@ -20,8 +22,9 @@ export const metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Eclipse Exhibit',
-        description: 'Prestigious art news and contemporary culture coverage.',
+        title: "Ferruccio's 'Stargazing' to Headline the Louvre's Modern Masters Collection",
+        description:
+            "The art world is once again ablaze with admiration as Ferruccio unveils his breathtaking new work, Stargazing, a piece already being hailed as a generation-defining masterpiece.",
         images: ['/images/eclipse-logo.jpg']
     },
     icons: {

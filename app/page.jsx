@@ -11,12 +11,12 @@ export default function Page() {
                 </div>
                 <div className="flex items-center justify-between gap-6">
                     <div className="flex items-center gap-4">
-                        <div className="h-12 w-12 overflow-hidden rounded-full border border-white/15 bg-black shadow-[0_0_30px_rgba(30,76,255,0.2)]">
-                            <Image src="/images/eclipse-logo-icon.png" alt="Eclipse Exhibit icon" width={48} height={48} />
+                        <div className="h-12 w-12 overflow-hidden rounded-full shadow-[0_0_30px_rgba(30,76,255,0.2)]">
+                            <Image src="/images/eclipse-logo-icon-no-background.png" alt="Eclipse Exhibit icon" width={48} height={48} />
                         </div>
                         <div className="space-y-2">
                             <Image
-                                src="/images/eclipse-logo-text.png"
+                                src="/images/eclipse-logo-text-transparent-v1.png"
                                 alt="Eclipse Exhibit"
                                 width={240}
                                 height={64}
@@ -138,7 +138,7 @@ export default function Page() {
                 <figure className="space-y-3">
                     <div className="overflow-hidden rounded-2xl border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.65)]">
                         <Image
-                            src="/images/eclipse-cover-2.jpg"
+                            src="/images/placeholder.jpeg"
                             alt="Ferruccio at the Shooting Star awards ceremony"
                             width={1200}
                             height={800}

@@ -2,98 +2,89 @@ import Image from 'next/image';
 
 export default function Page() {
     return (
-        <div className="space-y-12 pb-10 sm:space-y-16">
-            <header className="space-y-6">
-                <div className="flex flex-wrap items-center justify-between gap-4 text-[0.65rem] uppercase tracking-[0.35em] text-muted">
-                    <span>August 12, 2026</span>
-                    <span>Paris • Culture</span>
-                    <span>Issue No. 118</span>
-                </div>
-                <div className="flex items-center justify-between gap-6">
-                    <div className="flex items-center gap-4">
-                        <div className="h-12 w-12 overflow-hidden rounded-full shadow-[0_0_30px_rgba(30,76,255,0.2)]">
-                            <Image src="/images/eclipse-logo-icon-no-background.png" alt="Eclipse Exhibit icon" width={48} height={48} />
-                        </div>
-                        <div className="space-y-2">
-                            <Image
-                                src="/images/eclipse-logo-text-transparent-v1.png"
-                                alt="Eclipse Exhibit"
-                                width={240}
-                                height={64}
-                                className="h-6 w-auto sm:h-7"
-                                priority
-                            />
-                            <p className="text-xs uppercase tracking-[0.35em] text-muted">Art News & Modern Culture</p>
-                        </div>
-                    </div>
-                    <nav className="hidden items-center gap-6 text-xs uppercase tracking-[0.2em] text-muted md:flex">
-                        <a href="#" className="hover:text-accent">
-                            News
-                        </a>
-                        <a href="#" className="hover:text-accent">
-                            Collections
-                        </a>
-                        <a href="#" className="hover:text-accent">
-                            Profiles
-                        </a>
-                        <a href="#" className="hover:text-accent">
-                            Exhibitions
-                        </a>
-                        <a href="#" className="hover:text-accent">
-                            About
-                        </a>
+        <div className="space-y-10 pb-10 sm:space-y-14">
+            {/* ── Masthead ── */}
+            <header className="space-y-6 pt-2">
+                <div className="flex items-center justify-center">
+                    <nav className="hidden items-center gap-6 text-[0.6rem] uppercase tracking-[0.25em] text-muted md:flex">
+                        <a href="#" className="hover:text-accent">News</a>
+                        <a href="#" className="hover:text-accent">Collections</a>
+                        <a href="#" className="hover:text-accent">Profiles</a>
+                        <a href="#" className="hover:text-accent">Exhibitions</a>
+                        <a href="#" className="hover:text-accent">About</a>
                     </nav>
                 </div>
-                <div className="waterline opacity-60" />
+
+                <div className="waterline opacity-40" />
+
+                <div className="flex flex-col items-center gap-4 py-4">
+                    <div className="h-16 w-16 overflow-hidden rounded-full shadow-[0_0_40px_rgba(30,76,255,0.25)] sm:h-20 sm:w-20">
+                        <Image src="/images/eclipse-logo-icon-no-background.png" alt="Eclipse Exhibit icon" width={80} height={80} className="h-full w-full object-cover" />
+                    </div>
+                    <Image
+                        src="/images/eclipse-logo-text-transparent-v1.png"
+                        alt="Eclipse Exhibit"
+                        width={360}
+                        height={80}
+                        className="h-15 w-auto sm:h-19"
+                        priority
+                    />
+                    <p className="text-[0.6rem] uppercase tracking-[0.45em] text-muted">Art News & Modern Culture</p>
+                </div>
+
+                <div className="waterline opacity-40" />
             </header>
 
-            <section className="space-y-6">
-                <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em] text-muted">
+            {/* ── Article meta + title ── */}
+            <section className="space-y-6 text-center">
+                <div className="flex flex-wrap items-center justify-center gap-3 text-xs uppercase tracking-[0.2em] text-muted">
                     <span className="rounded-full border border-white/15 px-3 py-1">Modern Masters</span>
                     <span>Feature</span>
                 </div>
-                <div className="space-y-4">
-                    <h2 className="font-display text-4xl leading-tight text-white sm:text-5xl">
+
+                <div className="flex items-center justify-center gap-3 text-sm text-muted">
+                    <span className="text-white">Thien Ong</span>
+                    <span className="h-1 w-1 rounded-full bg-white/30" />
+                    <span>August 12, 2026</span>
+                </div>
+
+                <div className="mx-auto max-w-3xl space-y-4">
+                    <h2 className="font-display text-3xl leading-tight text-white sm:text-5xl">
                         Ferruccio&apos;s &apos;Stargazing&apos; to Headline the Louvre&apos;s Modern Masters Collection
                     </h2>
-                    <p className="max-w-3xl text-lg text-muted sm:text-xl">
+                    <p className="text-base text-muted sm:text-lg">
                         The art world is once again ablaze with admiration as Ferruccio unveils his breathtaking new
                         work, Stargazing, a piece already being hailed as a generation-defining masterpiece.
                     </p>
                 </div>
-                <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-muted">
-                    <div className="flex items-center gap-3">
-                        <span className="text-white">Thien Ong</span>
-                        <span className="h-1 w-1 rounded-full bg-white/30" />
-                        <span>Paris Bureau</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <button className="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
-                            Share
-                        </button>
-                        <button className="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
-                            Tweet
-                        </button>
-                        <button className="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
-                            Copy Link
-                        </button>
-                    </div>
+
+                <div className="flex items-center justify-center gap-2 pt-2">
+                    <button className="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
+                        Share
+                    </button>
+                    <button className="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
+                        Tweet
+                    </button>
+                    <button className="rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.2em] transition hover:border-accent hover:text-accent">
+                        Copy Link
+                    </button>
                 </div>
             </section>
 
+            {/* ── Hero image + first half of article ── */}
             <section className="space-y-6">
                 <figure className="space-y-3">
-                    <div className="overflow-hidden rounded-2xl border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.65)]">
+                    <div className="overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.65)]">
                         <Image
-                            src="/images/eclipse-cover-1.jpg"
+                            src="/images/eclipse-cover-1-landscape.webp"
                             alt="Ferruccio's painting Stargazing"
                             width={1400}
-                            height={900}
-                            className="h-[320px] w-full object-cover sm:h-[420px]"
+                            height={1000}
+                            className="w-full"
                             priority
                         />
                     </div>
-                    <figcaption className="text-xs uppercase tracking-[0.2em] text-muted">
+                    <figcaption className="text-center text-xs uppercase tracking-[0.2em] text-muted">
                         Ferruccio&apos;s Newest Painting: Stargazing
                     </figcaption>
                 </figure>
@@ -117,7 +108,7 @@ export default function Page() {
                     </p>
                     <p>Ferruccio himself, known for his humility and introspective nature, remained grounded when asked about the inspiration behind Stargazing.</p>
                     <blockquote className="border-l-2 border-accent pl-4 text-xl italic text-white sm:text-2xl">
-                        “I simply paint what I see.”
+                        &ldquo;I simply paint what I see.&rdquo;
                     </blockquote>
                     <p>
                         This modest assertion belies the deep well of creativity and insight that informs his artistic
@@ -134,6 +125,7 @@ export default function Page() {
                 </article>
             </section>
 
+            {/* ── Second image + remaining article ── */}
             <section className="space-y-6">
                 <figure className="space-y-3">
                     <div className="overflow-hidden rounded-2xl border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.65)]">
@@ -141,11 +133,11 @@ export default function Page() {
                             src="/images/placeholder.jpeg"
                             alt="Ferruccio at the Shooting Star awards ceremony"
                             width={1200}
-                            height={800}
-                            className="h-[260px] w-full object-cover sm:h-[360px]"
+                            height={900}
+                            className="aspect-4/3 w-full object-cover sm:aspect-3/2"
                         />
                     </div>
-                    <figcaption className="text-xs uppercase tracking-[0.2em] text-muted">
+                    <figcaption className="text-center text-xs uppercase tracking-[0.2em] text-muted">
                         Ferruccio (right) with fellow artist Benzo (left) at the 2024 Shooting Star awards ceremony
                     </figcaption>
                 </figure>
@@ -170,6 +162,7 @@ export default function Page() {
                 </article>
             </section>
 
+            {/* ── Related stories ── */}
             <section className="space-y-6 border-t border-white/10 pt-10">
                 <div className="flex items-center justify-between">
                     <h3 className="font-display text-2xl text-white">Related Stories</h3>
@@ -180,7 +173,7 @@ export default function Page() {
                 <div className="grid gap-5 md:grid-cols-3">
                     {[
                         {
-                            title: 'Inside the Louvre’s Modern Masters wing',
+                            title: 'Inside the Louvre\u2019s Modern Masters wing',
                             category: 'Exhibitions',
                             tag: 'Paris'
                         },
@@ -200,7 +193,7 @@ export default function Page() {
                             className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
                         >
                             <p className="text-xs uppercase tracking-[0.2em] text-muted">
-                                {item.category} • {item.tag}
+                                {item.category} &bull; {item.tag}
                             </p>
                             <h4 className="mt-3 font-display text-lg text-white">{item.title}</h4>
                             <button className="mt-6 text-xs uppercase tracking-[0.2em] text-accent">Read</button>
@@ -209,6 +202,7 @@ export default function Page() {
                 </div>
             </section>
 
+            {/* ── Footer ── */}
             <footer className="space-y-6 border-t border-white/10 pt-10 text-sm text-muted">
                 <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
                     <div>
@@ -228,8 +222,8 @@ export default function Page() {
                     </div>
                 </div>
                 <div className="flex flex-col gap-2 text-xs uppercase tracking-[0.2em] text-muted sm:flex-row sm:items-center sm:justify-between">
-                    <span>© 2026 Eclipse Exhibit</span>
-                    <span>Designed for screen • Optimized for mobile</span>
+                    <span>&copy; 2026 Eclipse Exhibit</span>
+                    <span>Designed for screen &bull; Optimized for mobile</span>
                 </div>
             </footer>
         </div>
